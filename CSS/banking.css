@@ -1,0 +1,62 @@
+.container{
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 200px;
+    
+       
+}
+.griddd{
+
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 50% 50%;
+    border: 4px solid;
+    border-radius: 40px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+
+}
+@media(max-width:650px){
+    .griddd{
+        margin: 0;
+        display: inline-block;
+        z-index: 2px;
+       
+
+    }
+    body{
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+
+    }
+
+  }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+input{
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border-color: #23d5ab;
+    border-width: 5px;
+    background-color: #ee7752;
+}
+
+
+.copy{
+    font-size: 10px;
+    margin: 50px auto;
+    width: 280px;
+  }

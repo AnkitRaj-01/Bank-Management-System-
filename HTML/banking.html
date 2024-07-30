@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="icon" type="image/x-icon" href="../LOGO/BBD1 - Edited - Edited.png">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/banking.css">
+</head>
+<body>
+    <div include-html="navigation.html" id="navig"></div>
+    <script src="../JS/include-html.min.js"></script>
+    <div class="container">
+        <div class="griddd">
+            <div style="text-align: center;">
+                <img src="../LOGO/BBD1 - Edited - Edited.png" alt="logo" width="100px">
+                <h2>Welcome Back!</h2>
+                <p>Enter your ID and Password to start your journey with Bank of Bajarang Dal</p>
+            </div>
+            <div style="text-align: center;">
+                <h1>Login</h1>
+                <!-- <label for="">UserID</label><br> -->
+                <input type="text" placeholder="UserID"><br><br>
+                <!-- <label for="password">Password</label><br> -->
+                <input type="password" placeholder="password"><br><br>
+                <button  onclick="loggg()">Login</button><br>
+            </div>
+                
+
+
+        </div>
+
+    </div>
+    <script>
+        loggg=function(){
+            var id = document.querySelector("input[type='text']").value;
+            var pwd = document.querySelector("input[type='password']").value;
+    
+            if(id === "sanu" && pwd === "sanu") {
+                window.location.href = "https://sanu0711.github.io/Bank-Of-Bajarang-Dal/HTML/login.html";
+
+               
+            } else {
+                alert("Invalid user ID or password.");
+            }
+        }
+    </script>
+    
+
+   
+
+    
+
+    
+    
+      
+      <p class="copy">Copyright 2023 © Bank of Bajarang Dal . All Rights Reserved.</p>
+
+    
+</body>
+</html>
